@@ -34,7 +34,7 @@ public class SinglyLinkedList {
                potentialLastNode = potentialLastNode.next;
 
            }
-           potentialLastNode = new Node(valueToBeAdded, null);
+           potentialLastNode.next = new Node(valueToBeAdded,null);
        }
     }
 
@@ -46,10 +46,11 @@ public class SinglyLinkedList {
        }
        else {
            Node nodeBeingProcessed = this.head;
-           while (nodeBeingProcessed.next != null){
+           while (nodeBeingProcessed != null){
                outputArrayList.add(nodeBeingProcessed.value);
                nodeBeingProcessed = nodeBeingProcessed.next;
            }
+
        }
        return outputArrayList;
     }
