@@ -4,10 +4,21 @@ import java.util.ArrayList;
 
 public class SinglyLinkedList {
 
-   private Node head;
+   public Node head;
 
-   public SinglyLinkedList(){
+
+    public SinglyLinkedList(){
         this.head = null;
+    }
+
+
+    public static SinglyLinkedList arrayToLinkedList (int[] inputArray){
+       SinglyLinkedList outputLinkedList = new SinglyLinkedList();
+
+       for (int i : inputArray){
+           outputLinkedList.addLast(i);
+       }
+       return outputLinkedList;
     }
 
 
@@ -54,12 +65,4 @@ public class SinglyLinkedList {
        }
        return outputArrayList;
     }
-
-
-
-
-
-
-
-
 }
