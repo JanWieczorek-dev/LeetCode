@@ -1,4 +1,4 @@
-package addtwonumbersProblem;
+package addtwonumbersMedium;
 
 import usefulstuff.singlylinkedlist.Node;
 import usefulstuff.singlylinkedlist.SinglyLinkedList;
